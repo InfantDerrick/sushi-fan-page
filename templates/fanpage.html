@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" />
+  <title>Sushi - Fan Club</title>
+</head>
+<body>
+  <div class="page-header">
+    <h1>♡Sushi's Fanpage♡</h1>
+  </div>
+
+  <div class = "pic-session">
+    <h3>Cuddly Sushi ᓚᘏᗢ</h3>
+    <div class = "pics">
+      <img src="static/images/sushi2.jpg" alt="woops no sushi">
+      <img src="static/images/sushi7.jpg" alt="woops no sushi">
+      <img src="static/images/sushi8.jpg" alt="woops no sushi">
+      <img src="static/images/sushi12.jpg" alt="woops no sushi">
+      <img src="static/images/sushi14.jpg" alt="woops no sushi">
+      <img src="static/images/sushi15.jpg" alt="woops no sushi">
+    </div>
+  </div>
+
+  <div class = "pic-session">
+    <h3>Naughty Sushi —ฅ/ᐠ. ̫ .ᐟ\ฅ —</h3>
+    <div class = "pics">
+      <img src="static/images/sushi3.jpg" alt="woops no sushi">
+      <img src="static/images/sushi4.jpg" alt="woops no sushi">
+      <img src="static/images/sushi5.jpg" alt="woops no sushi">
+      <img src="static/images/sushi18.jpg" alt="woops no sushi">
+    </div>
+  </div>
+
+  <div class = "pic-session">
+    <h3>Professional Sushi *ฅ^•ﻌ•^ฅ*</h3>
+    <div class = "pics">
+      <img src="static/images/sushi1.jpg" alt="woops no sushi">
+      <img src="static/images/sushi10.jpg" alt="woops no sushi">
+      <img src="static/images/sushi11.jpg" alt="woops no sushi">
+      <img src="static/images/sushi13.jpg" alt="woops no sushi">
+      <img src="static/images/sushi16.jpg" alt="woops no sushi">
+    </div>
+    
+  </div>
+
+  <h2 class = table-title>🐾Fan Memberships🐾</h2>
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Member Since</th>
+      <th>Sushi ♡ Points</th>
+    </tr>
+    {% for fan in fans %}
+    <tr>
+        <td>{{ fan[0] }}</td>
+        <td>{{ fan[1] }}</td>
+        <td>{{ fan[2] }}</td>
+        <td>{{ fan[3] }} ♡ Points</td>
+    </tr>
+  {% endfor %}
+  </table>
+
+  <div class = "form-title">
+    <h2> Want to become a fan too?</h2>
+  </div>
+  
+  <form class="pure-form pure-form-aligned" method = "POST"  action = "/">  
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="aligned-name">First Name</label>
+            <input required name= "FName" type="text" id="aligned-name" placeholder="First name" />
+        </div>
+        <div class="pure-control-group">
+            <label for="aligned-name">Last Name</label>
+            <input required name= "LName" type="text" id="aligned-name" placeholder="Last name" />
+        </div>
+        <div class="pure-control-group">
+          <label for="aligned-foo">Year of Membership</label>
+          <input required name= "membership" type="text" id="aligned-foo" placeholder="Enter year" />
+      </div>
+        <div class="pure-control-group">
+            <label for="aligned-foo">Sushi Points</label>
+            <input required name= "points" type="text" id="aligned-foo" placeholder="Enter points" />
+        </div>
+        <div class="pure-controls">
+            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>

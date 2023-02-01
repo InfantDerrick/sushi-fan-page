@@ -1,0 +1,146 @@
+@font-face {
+  font-family: dancingscript;
+  src: url(../fonts/DancingScript.ttf);
+}
+@font-face {
+  font-family: Marhey-medium;
+  src: url(../fonts/Marhey-Medium.ttf);
+}
+body{
+  background-image: url(../images/sushibg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.page-header{
+  font-family: Marhey-medium;
+  color: white;
+  font-size: 175%;
+  text-align: center;
+  width: fit-content;
+  
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgb(218, 111, 87);
+  border-radius: 5%;
+}
+.page-header h1{
+  margin: 0px;
+}
+.pic-session{
+  margin: auto;
+  margin-top: 5%;
+  background-color: rgb(232, 185, 138);
+  padding: 1%;
+  border-radius: 10px;
+  max-width: 90%;
+  min-width: fit-content;
+  margin-bottom: 20px;
+ 
+}
+.pics{
+  margin: auto;
+  padding: 1%;
+  max-width: 90%;
+  min-width: fit-content;
+  text-align: center;
+}
+.pics img{
+  margin: auto;
+  padding: auto;
+  border: solid;
+  border-radius: 10px;
+  border-color: white;
+  border-width: 7px;
+  height: 400px;
+}
+h3{
+  color:rgb(180, 101, 77);
+  font-family: Marhey-medium;
+  font-style: oblique;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.quiz {
+  width: fit-content;
+  height: fit-content;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.quiz label{
+  font-size: 175%;
+}
+
+table{
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  width: 70%;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+th{
+  background-color: rgb(232, 185, 138);
+  margin: 10px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(77, 26, 26);
+}
+td{
+  background-color:antiquewhite;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  color: rgb(77, 26, 26);
+}
+
+.table-title{
+  font-family: Marhey-medium;
+  color: white;
+  font-size: 500%;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  margin-top: 10%;
+  padding: 10px;
+  background-color: rgb(218, 111, 87);
+  border-radius: 5%;
+}
+.table-title h2{
+  margin: 0px;
+}
+
+form{
+  margin: auto;
+  width: fit-content;
+}
+fieldset{
+  width: fit-content;
+}
+
+.form-title{
+  color:rgb(180, 101, 77);
+  font-family: Marhey-medium;
+  font-style: oblique;
+  font-size: 31px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+
+}
+
+.pure-button {
+  background-color: rgb(218, 111, 87) !important;
+  color: white;
+  margin-bottom: 20px;
+  padding: 0.5em 2em;
+  border-radius: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
